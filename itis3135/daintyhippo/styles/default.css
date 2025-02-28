@@ -1,14 +1,12 @@
-main { 
-    max-width: 1200px; 
-    width: 90%;
-    margin: 0 auto;
-}
+
 
 body {
     background-color: #F7F7F7;
     font-family: Georgia;
     text-align: center;
-    margin: auto; 
+    max-width: 1200px; 
+    width: 90%;
+    margin: 0 auto; 
 }
 
 h1{ 
@@ -57,3 +55,14 @@ img {
         background-color:yellow;
     }
 }
+
+/* Desktops */ 
+@media screen and (min-width: 2500px) {
+    .header-component {
+      text-align: center;
+    }
+    
+    .footer-component {
+      text-align: center;
+    }
+  }

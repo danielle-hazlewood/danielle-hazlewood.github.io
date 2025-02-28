@@ -55,7 +55,7 @@ li{
 }
 
 /* Desktops */ 
-@media screen and (min-width: 1401px) {
+@media screen and (min-width: 2500px) {
     .header-component {
       text-align: center;
     }
