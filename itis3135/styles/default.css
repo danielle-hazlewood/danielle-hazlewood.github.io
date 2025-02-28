@@ -3,10 +3,6 @@ body {
     text-align: center; 
     color:aliceblue;
     font-family:Verdana;  
-    margin:auto;
-}
-
-main { 
     max-width: 1200px; 
     width: 90%;
     margin: 0 auto;
@@ -58,4 +54,13 @@ li{
     }
 }
 
-
+/* Desktops */ 
+@media screen and (min-width: 1401px) {
+    .header-component {
+      text-align: center;
+    }
+    
+    .footer-component {
+      text-align: center;
+    }
+  }
