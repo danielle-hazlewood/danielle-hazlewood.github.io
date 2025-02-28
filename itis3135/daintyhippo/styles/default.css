@@ -37,10 +37,6 @@ img {
     width: 70%;
 }
 
-html, body {
-    all:initial;
-}
-
 /* Mobile */
 @media screen and ( min-width: 370px ) and ( max-width: 600px ) {
     #colorbox {
