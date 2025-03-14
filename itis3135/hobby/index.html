@@ -204,6 +204,7 @@
             <ul>
                 <li>can you write javascript to hide and show the different sections</li>
                 <li>does my styling follow the CRAP principles</li>
+                <li>can you change the javascript to allow the home page to load automatically when the page is opened</li>
             </ul>
         </section>
     </main>
@@ -212,7 +213,8 @@
         <p>Certified in <a href="https://www.freecodecamp.org/certification/DanielleHazlewood/responsive-web-design" target="_blank">Responsive Web Design</a></p>
     </footer>
     <script>
-       const sections = document.querySelectorAll('section');
+       
+        const sections = document.querySelectorAll('section');
 
         // Get all navigation links
         const navLinks = document.querySelectorAll('nav a');
@@ -235,12 +237,13 @@
         const activeSection = document.getElementById(sectionId);
         activeSection.classList.add('active');
         });
+        });
 
+        // Load home page automatically when the page is opened
         document.addEventListener('DOMContentLoaded', () => {
         const homeSection = document.getElementById('home');
         homeSection.classList.add('active');
-});
-    });
+        });
     </script>
 </body>
 </html>
