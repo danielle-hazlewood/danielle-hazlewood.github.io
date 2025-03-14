@@ -82,7 +82,7 @@
         </nav>
     </header>
     <main>
-        <section id="home">
+        <section id="home" class="active">
             <h2>Home</h2>
             <p>
                 Track &amp; Field can look extremely intimidating from what is seen on the Olympics but there is a spot for everyone. It has a total of 48 events, 24 for men and 24 for female. 
@@ -235,6 +235,11 @@
         const activeSection = document.getElementById(sectionId);
         activeSection.classList.add('active');
         });
+
+        document.addEventListener('DOMContentLoaded', () => {
+        const homeSection = document.getElementById('home');
+        homeSection.classList.add('active');
+});
     });
     </script>
 </body>
