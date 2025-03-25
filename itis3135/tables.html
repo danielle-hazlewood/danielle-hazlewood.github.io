@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/default.css">
+    <title>Danielle Hazlewood's Dainty Hippo || ITIS3135 || HTML Tables</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>HTML Tables</h2>
+        <h3>My Tableular Data</h3>
+        <ol>
+            <li>Pam Hazlewood phazlewood@gmail.com 35</li>
+            <li>Lily Darr ldarr@gmail.com 5</li>
+            <li>Callie Wood cwood@gmail.com 1</li>
+            <li>Leyton Watson lwatson@gmail.com 10</li>
+            <li>Kyle Hazlewood khazlewood@gmail.com 2</li>
+            <li>John King jking@gmail.com 23</li>
+            <li>Sam Johnson sjohnson@gmail.com 11</li>
+            <li>Jaxon Miller jmiller@gmail.com 7</li>
+            <li>Trey Wood twood@gmail.com 3</li>
+        </ol>
+        <h3>Simple Table With Employee Data</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Years of Service</th>
+            </tr>
+            <tr>
+                <td>Pam Hazlewood</td>
+                <td>phazlewood@gmail.com</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>Lily Darr</td>
+                <td>ldarr@gmail.com</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Callie Wood</td>
+                <td>cwood@gmail.com</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Leyton Watson</td>
+                <td>lwatson@gmail.com</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Kyle Hazlewood</td>
+                <td>khazlewood@gmail.com</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>John King</td>
+                <td>jking@gmail.com</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>Sam Johnson</td>
+                <td>sjohnson@gmail.com</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>Jaxon Miller</td>
+                <td>jmiller@gmail.com</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Trey Wood</td>
+                <td>twood@gmail.com</td>
+                <td>3</td>
+            </tr>
+        </table>
+        <h3>Complex Table With Employee Data</h3>
+        <figure>
+            <figcaption>Fancy Employee Table</figcaption>
+        <table>
+            <tr>
+                <th id="department">Department</th>
+                <th id="name">Name</th>
+                <th id="email">Email</th>
+                <th id="service">Years of Service</th>
+                <th id="salary">Salary</th>
+            </tr>
+            <tr>
+                <td headers="department" rowspan="3">Sales</td>
+                <td headers="name">Pam Hazlewood</td>
+                <td headers="email">phazlewood@gmail.com</td>
+                <td headers="service">35</td>
+                <td headers="salary">$150,000</td>
+            </tr>
+            <tr>
+                <td headers="name">Lily Darr</td>
+                <td headers="email">ldarr@gmail.com</td>
+                <td headers="service">5</td>
+                <td headers="salary">$65,000</td>
+            </tr>
+            <tr>
+                <td headers="name">Callie Wood</td>
+                <td headers="email">cwood@gmail.com</td>
+                <td headers="service">1</td>
+                <td headers="salary">$20,000</td>
+            </tr>
+            <tr>
+                <td headers="department" rowspan="3">Marketing</td>
+                <td headers="name">Leyton Watson</td>
+                <td headers="email">lwatson@gmail.com</td>
+                <td headers="service">10</td>
+                <td headers="salary">$75,000</td>
+            </tr>
+            <tr>
+                <td headers="name">Kyle Hazlewood</td>
+                <td headers="email">khazlewood@gmail.com</td>
+                <td headers="service">2</td>
+                <td headers="salary">$50,000</td>
+            </tr>
+            <tr>
+                <td headers="name">John King</td>
+                <td headers="email">jking@gmail.com</td>
+                <td headers="service">23</td>
+                <td headers="salary">$125,000</td>
+            </tr>
+            <tr>
+                <td headers="department" rowspan="3">Operations</td>
+                <td headers="name">Sam Johnson</td>
+                <td headers="email">sjohnson@gmail.com</td>
+                <td headers="service">11</td>
+                <td headers="salary">$100,000</td>
+            </tr>
+            <tr>
+                <td headers="name">Jaxon Miller</td>
+                <td headers="email">jmiller@gmail.com</td>
+                <td headers="service">7</td>
+                <td headers="salary">$90,000</td>
+            </tr>
+            <tr>
+                <td headers="name">Trey Wood</td>
+                <td headers="email">twood@gmail.com</td>
+                <td headers="service">3</td>
+                <td headers="salary">$65,000</td>
+            </tr>
+            <tr>
+                <td colspan="3">Total Years of Service</td>
+                <td headers="service">97</td>
+                <td headers="salary">$740,000</td>
+            </tr>
+        </table>
+    </figure>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>

@@ -29,9 +29,34 @@ figcaption{
     font-style: italic;
 }
 
-li{
+li, ol{
     text-align: left;
 }
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+    color:burlywood;
+}
+
+figure tr:nth-child(odd) td { 
+    background-color: #636363;
+}
+
+figure tr:nth-child(even) td { 
+    background-color: gray;
+}
+
 
 /* Mobile */
 @media screen and ( min-width: 370px ) and ( max-width: 600px ) {
