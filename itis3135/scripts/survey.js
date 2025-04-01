@@ -3,7 +3,7 @@ function validateForm(event) {
   const requiredFields = document.querySelectorAll('input[required], textarea[required]');
   let isValid = true;
 
-  requiredFields.forEach(field => {
+  requiredFields.forEach((field) => {
     if (field.value.trim() === '') {
       isValid = false;
     }
@@ -24,6 +24,15 @@ function resetForm() {
   }
 }
 
+// Function to delete course text box
+function deleteCourse(event) {
+  const deleteButton = event.target;
+  const coursesContainer = document.getElementById('courses-container');
+  const courseInput = deleteButton.previousSibling;
+  coursesContainer.removeChild(courseInput);
+  coursesContainer.removeChild(deleteButton);
+}
+
 // Function to add new course text box
 function addCourse() {
   const coursesContainer = document.getElementById('courses-container');
@@ -36,15 +45,6 @@ function addCourse() {
   deleteButton.onclick = deleteCourse;
   coursesContainer.appendChild(newCourseInput);
   coursesContainer.appendChild(deleteButton);
-}
-
-// Function to delete course text box
-function deleteCourse(event) {
-  const deleteButton = event.target;
-  const coursesContainer = document.getElementById('courses-container');
-  const courseInput = deleteButton.previousSibling;
-  coursesContainer.removeChild(courseInput);
-  coursesContainer.removeChild(deleteButton);
 }
 
 // Function to gather data from form and display content
@@ -68,7 +68,7 @@ function displayContent(event) {
     <p>Primary Computer Platform: ${formData.get('computer-platform')}</p>
     <p>Courses:</p>
     <ul>
-    ${Array.from(document.querySelectorAll('#courses-container input[type="text"]')).map(course => `<li>${course.value}</li>`).join('')}
+    ${Array.from(document.querySelectorAll('#courses-container input[type="text"]')).map((course) => `<li>${course.value}</li>`).join('')}
     </ul>
     <p>Funny/Interesting Thing: ${formData.get('funny-thing')}</p>
     <p>Anything Else: ${formData.get('anything-else')}</p>
