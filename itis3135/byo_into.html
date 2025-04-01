@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/default.css">
+    <title>Danielle Hazlewood's Dainty Hippo || ITIS3135 || BYO Intro</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>BYO Intro</h2>
+        <h3>Time to BYO Intro Page, Please Fill out the Form Below so We Can Create Your Own Page</h3>
+        <form>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" value="Danielle" required>
+
+            <label for="middle-inital">Middle Inital:</label>
+            <input type="text" id="middle-inital" value="A" required>
+
+            <label for="nickname">Nickname:</label>
+            <input type="text" id="nickname">
+            
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" value="Hazlewood" required>
+
+            <label for="mascot">Mascot:</label>
+            <input type="text" id="mascot" value="Dainty Hippo" required>
+            
+            <label for="image">Add an Image - JPG/PNG:</label>
+            <input type="file" id="image" accept="image/png, image/jpeg" required>
+
+            <label for="image-caption">Image Caption</label>
+            <em><input type="text" id="image-caption" value="With My Truck" required></em> 
+
+            <label for="personal-background">Personal Background:</label>
+            <textarea id="personal-background" required>I was born and raised in Mooresville, North Carolina, about 35 minutes without traffic from Charlotte.</textarea>
+
+            <label for="professional-background">Professional Background:</label>
+            <textarea id="professional-background" required>I have been able to work on my family's farm working with Christmas trees, hay, and livestock. On top of that, I have been in management for 3 years in the restaurant industry. I also became a landlord as of early last year.</textarea>
+
+            <label for="academic-background">Academic Background:</label>
+            <textarea id="academic-background" required>After graduating high school in 2023, I joined Mitchell Community College to study for a general transfer degree, Associate in Arts. I was able to finish early due to dual enrollment in high school leaving me to graduate in May of 2024. I choose UNC Charlotte to stay close to home, especially after losing my father back in April. I am a junior studying Computer Science with a concentration in Cybersecurity.</textarea>
+
+            <label for="background-web-development">Background in Web Development:</label>
+            <textarea id="background-web-development" required>Honestly, I never really looked into web development due to the lack of resources and time. While at Mitchell and in high school I worked full time, sometimes even overtime, which left little time for anything outside of school and work. I have worked primarily with Python, Java, and MySQL.</textarea>
+            
+            <label for="computer-platform">Primary Computer Platform:</label>
+            <input type="text" id="computer-platform" value="MacOS" required>
+
+            <label for="courses-fieldset">Courses I'm Currently Taking &amp; Why:</label>
+            <fieldset id="courses-fieldset">
+                <div id="courses-container">
+                <button id="add-course">Add Course</button>
+                <input type="text" id="course-1" value="ITIS 3135 Web-Based Application Design and Development: Required, I am interested in learning about web development as I have never done it before." required>
+                <input type="text" id="course-2" value="ITIS 3200 Intro to Info Security & Priv: Required, I want to go into law enforcement when I graduate but I wanted to learn something that I can help me specialize in a unit when I go in so I choose computer science." required>
+                <input type="text" id="course-3" value="ITSC 2175 Logic and Algorithms: Required, I dont know much about what this class entails." required>
+                <input type="text" id="course-4" value="ITSC 2181 Introduction to Computer Systems: Required, Learned on the first day that this class is about the middle man between code and the computer components so it sounds interesting." required>
+                <input type="text" id="course-5" value="MATH 2164 Matrices & Linear Algebra: Required, I also loved doing matrices in other classes so im exited to go more in depth with it." required>
+              </div>
+            </fieldset>
+            
+
+            <label for="funny-thing">Funny/Interesting Thing:</label>
+            <input type="text" id="funny-thing" value="If I do not have a hoodie on, I have a tattoo of 4 trees and the date we lost my grandfather on my bicep." required> 
+
+            <label for="anything-else">Anything Else:</label>
+            <textarea id="anything-else" required>I am super quiet when I first meet people, but once I get comfortable, I never stop talking.</textarea>
+
+            <p>I understand that what is on this page is not password protected and I will not put anything here that I do not want publicly available.</p>
+            <input type="checkbox" id="agree" required><p>I agree. </p>
+
+            <input type="submit" value="Submit"> 
+            <input type="reset" value="Reset">
+        </form>
+    </main>
+        <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/survey.js"></script>
+</body>
+</html>
