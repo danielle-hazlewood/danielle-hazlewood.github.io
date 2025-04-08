@@ -1,0 +1,33 @@
+body {background-color:aliceblue;}
+h1 {
+    color:dimgray;
+    border: 2px; 
+    margin: 10px;
+    text-align: left;
+    font-family: Verdana;
+    border-bottom: solid;
+}
+
+h2{
+    color:dimgray;
+    border: 2px; 
+    margin: 10px;
+    text-align: center; 
+    font-family: Verdana
+}
+
+p{
+    color:dimgray;
+    border: 2px; 
+    margin: 10px;
+    text-align: left; 
+    font-family: Verdana
+}
+
+a{
+    color:rgb(153, 4, 19);
+    font-family: Verdana
+}
+nav{
+    text-align:right;
+}
