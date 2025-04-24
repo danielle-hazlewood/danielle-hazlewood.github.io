@@ -4,54 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/default.css">
-    <title>Hair by Lily Darr ✂ Portfolio</title>
-    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <title>Hair by Lily Darr</title>
 </head>
 <body>
     <header>
-         <nav>
-            <a href="index.html">Home</a>
-            ✂
-            <a href="about_me.html">About Me</a>
-            ✂
-            <a href="education.html">Education</a>
-            ✂
-            <a href="portfilio.html">Portfolio</a>
-            ✂
-            <a href="contact_me.html">Contact Me</a>
-        </nav>
-        <h1>Hair By Lily Darr</h1>
+        <div data-include="components/header.html"></div>
     </header>
     <main>
         <h2>Portfolio</h2>
-        <h3>Men's Hair Cuts</h3>
-        <section class="mens-haircut">
-            <div class="slides">
-                <img src="images/mensI.jpg" alt="mens-cut-I">
+        <section>
+            <div class="mens-haircut">
+                <h3>Men's Hair Cuts</h3>
+                <div class="slides-mens">
+                    <img src="images/mensI.jpg" alt="mens-cut-I">
+                </div>
+                <div class="slides-mens">
+                    <img src="images/mensII.jpg" alt="mens-cut-II">
+                </div>
+                <div class="slides-mens">
+                    <img src="images/mensIII.jpg" alt="mens-cut-III">
+                </div>
+                <div class="slides-mens">
+                    <img src="images/mensIV.jpg" alt="mens-cut-IV">
+                </div>
+                <div class="slides-mens">
+                    <img src="images/mensV.jpg" alt="mens-cut-V">
+                </div>
+                <div class="slides-mens">
+                    <img src="images/mensVI.jpg" alt="mens-cut-VI">
+                </div>
+                <button class="prev" onclick="plusSlides(-1, 'mens')">Previous</button>
+                <button class="next" onclick="plusSlides(1, 'mens')">Next</button>
             </div>
-            <div class="slides">
-                <img src="images/mensII.jpg" alt="mens-cut-II">
-            </div>
-            <div class="slides">
-                <img src="images/mensIII.jpg" alt="mens-cut-III">
-            </div>
-            <div class="slides">
-                <img src="images/mensIV.jpg" alt="mens-cut-IV">
-            </div>
-            <div class="slides">
-                <img src="images/mensV.jpg" alt="mens-cut-V">
-            </div>
-            <div class="slides">
-                <img src="images/mensVI.jpg" alt="mens-cut-VI">
-            </div>
+        </section>
 
-            <!--Still need to add more-->
+        <section>
+            <div class="cutsandcolor">
+                <h3>Cuts and Color</h3>
+                <div class="slides-women">
+                    <img src="images/women1.jpg" alt="cutandcolor1">
+                </div>
+                <div class="slides-women">
+                    <img src="images/women2.jpg" alt="cutandcolor2">
+                </div>
+                <div class="slides-women">
+                    <img src="images/women3.jpg" alt="cutandcolor3">
+                </div>
+                <div class="slides-women">
+                    <img src="images/women4.jpg" alt="cutandcolor4">
+                </div>
+                <div class="slides-women">
+                    <img src="images/women5.jpg" alt="cutandcolor5">
+                </div>
+                <div class="slides-women">
+                    <img src="images/women6.jpg" alt="cutandcolor6">
+                </div>
+                <button class="prev" onclick="plusSlides(-1, 'women')">Previous</button>
+                <button class="next" onclick="plusSlides(1, 'women')">Next</button>
+            </div>
         </section>
     </main>
     <footer>
-        <p><a href="https://www.instagram.com/hairby.lilyd/" target="_blank">Instagram</a></p>
-        ✂
-        <p><a href="https://www.instagram.com/accenthairdesign/" target="_blank">My Salon</a></p>
+        <div data-include="components/footer.html"></div>
     </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/slideshow.js"></script>
 </body>
 </html>
