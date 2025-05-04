@@ -13,23 +13,23 @@
     </header>
     <main>
         <h2>Contact Me</h2>
-        <form>
-            <label>Name:</label>
-            <input type="text" required>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
 
-            <label>Phone Number:</label>
-            <input type="text" required>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required>
 
-            <label>Email:</label>
-            <input type="text" required> 
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
 
-            <label>Message:</label>
-            <textarea></textarea>
+            <label for="message">Message:</label>
+            <textarea id="message"></textarea>
 
-            <input type="submit" value="Submit"> 
+            <input type="submit" value="Submit">
         </form>
     </main>
-    <footer>
+    <footer class="footer">
         <div data-include="components/footer.html"></div>
     </footer>
     <script src="scripts/HTMLInclude.min.js"></script>

@@ -28,6 +28,106 @@ a{
     color:rgb(153, 4, 19);
     font-family: Verdana
 }
-nav{
+nav {
     text-align:right;
 }
+
+.education h1 {
+    text-align: center;
+}
+
+.footer nav {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure {
+    text-align: center;
+}
+
+.button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.mens-haircut, .cutsandcolor {
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="tel"], input[type="email"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 100px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Mobile */
+@media screen and ( min-width: 370px ) and ( max-width: 600px ) {
+    #colorbox {
+        background-color:red;
+    }
+}
+
+/* Tablets */
+@media screen and ( min-width: 601px ) and ( max-width: 980px )  {
+    #colorbox {
+        background-color:orange;
+    }
+}
+
+/* Laptops */
+@media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
+    #colorbox {
+        background-color:yellow;
+    }
+}
+
+/* Desktops */ 
+@media screen and (min-width: 2500px) {
+    .header-component {
+      text-align: center;
+    }
+    
+    .footer-component {
+      text-align: center;
+    }
+  }
